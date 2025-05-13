@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burhanuddin Rampurawala | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="noise"></div>
+    <div class="lines"></div>
+    
+    <header>
+        <div class="logo">BR</div>
+        <nav>
+            <div class="nav-icon" id="nav-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="glitch" data-text="Burhanuddin Rampurawala">Burhanuddin Rampurawala</h1>
+                        <h2 class="subtitle">Front-End Developer | Cybersecurity Enthusiast</h2>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Nashik, India</p>
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary-btn">Contact Me</a>
+                            <a href="#projects" class="btn secondary-btn">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <div class="hex-border"></div>
+                            <canvas id="matrixCanvas" width="300" height="300"></canvas>
+                            <div class="matrix-controls">
+                                <label for="matrixBrightness">Matrix Brightness</label>
+                                <input type="range" id="matrixBrightness" min="0" max="100" value="50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:burhanr15@outlook.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919145583427" class="social-icon" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://tryhackme.com/" target="_blank" class="social-icon" aria-label="TryHackMe">
+                        <i class="fas fa-flag"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="terminal">
+                            <div class="terminal-header">
+                                <div class="terminal-buttons">
+                                    <span class="terminal-button red"></span>
+                                    <span class="terminal-button yellow"></span>
+                                    <span class="terminal-button green"></span>
+                                </div>
+                                <div class="terminal-title">profile.sh</div>
+                            </div>
+                            <div class="terminal-body">
+                                <p class="command">$ cat professional_summary.txt</p>
+                                <p class="output">Proficient front-end developer with a strong foundation in cybersecurity, currently advancing skills in network security and penetration testing through certifications like CCNA and PNPT. Proven ability to integrate cutting-edge technologies, such as blockchain, into secure, responsive web solutions. Skilled in collaborative problem-solving, risk assessment, and strategic IAM implementations.</p>
+                                <p class="command">$ cat education.txt</p>
+                                <p class="output">B.Tech in Computer Science and Engineering (Cyber Security)</p>
+                                <p class="output">Sandip University, Nashik</p>
+                                <p class="output">May 2021 – Present</p>
+                                <p class="command">$ cat languages.txt</p>
+                                <p class="output">English: Full Professional Proficiency</p>
+                                <p class="output">Hindi: Full Professional Proficiency</p>
+                                <p class="output">Arabic: Medium Proficiency</p>
+                                <p class="command">$ cat interests.txt</p>
+                                <p class="output">Football</p>
+                                <p class="command"><span class="cursor-blink">_</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Cybersecurity Analyst</h3>
+                            <h4>Forage (Tata Consultancy Services Job Simulation)</h4>
+                            <p class="timeline-date">August 2024 (Remote)</p>
+                            <ul class="timeline-details">
+                                <li>Conducted identity and access management (IAM) projects to align cybersecurity protocols with business objectives.</li>
+                                <li>Delivered detailed documentation and presentations, translating technical concepts into actionable business insights.</li>
+                                <li>Collaborated with cybersecurity consulting teams to refine and implement IAM strategies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <h3>Ethical Hacking & Penetration Testing Intern</h3>
+                            <h4>Groott</h4>
+                            <p class="timeline-date">June 2023 – July 2023 (Remote)</p>
+                            <ul class="timeline-details">
+                                <li>Performed system audits, risk analysis, and security testing, ensuring compliance with security standards.</li>
+                                <li>Proposed enhancements to existing security policies and documented best practices.</li>
+                                <li>Streamlined tasks to meet tight deadlines while maintaining quality assurance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>DefenseSphere</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-date">July 2023 – Present</p>
+                            <ul class="project-details">
+                                <li>Designed a blockchain-based employee login dashboard to fortify security protocols for access management.</li>
+                                <li>Integrated features like VPN and file integrity monitoring for enhanced user experience and security.</li>
+                                <li>Utilized blockchain for tamper-proof authentication, ensuring data integrity.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tag">Blockchain</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">Dashboard</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3>Portfolio Website</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-date">September 2024</p>
+                            <ul class="project-details">
+                                <li>Built a responsive personal portfolio using HTML, CSS, Javascript, React, Tailwind to showcase projects and achievements.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-keyboard"></i>
+                            </div>
+                            <h3>Keylogger</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-date">October 2024</p>
+                            <ul class="project-details">
+                                <li>Developed a Python-based keylogger utilizing system libraries and pynput for monitoring activities.</li>
+                            </ul>
+                        </div>
+                        <div class="project-footer">
+                            <span class="tag">Python</span>
+                            <span class="tag">Security</span>
+                            <span class="tag">System Libraries</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3>Frontend Development</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>HTML</p>
+                                    <p class="percent">90%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>CSS</p>
+                                    <p class="percent">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>JavaScript</p>
+                                    <p class="percent">80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Responsive Design</p>
+                                    <p class="percent">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Programming</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Python</p>
+                                    <p class="percent">75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Bash Scripting</p>
+                                    <p class="percent">70%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Networking</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Routing & Switching</p>
+                                    <p class="percent">80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>WAN/LAN Technologies</p>
+                                    <p class="percent">75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Hardware Configuration</p>
+                                    <p class="percent">70%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Cybersecurity</h3>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Ethical Hacking</p>
+                                    <p class="percent">85%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Penetration Testing</p>
+                                    <p class="percent">80%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <p>Identity Access Management</p>
+                                    <p class="percent">75%</p>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="cert-container">
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Cisco Certified Network Associate (CCNA)</h3>
+                            <p class="cert-status">In Progress</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Practical Network Penetration Tester (PNPT)</h3>
+                            <p class="cert-status">In Progress</p>
+                        </div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="cert-details">
+                            <h3>Prompt Engineering</h3>
+                            <p class="cert-status">deeplearning.ai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p><a href="mailto:burhanr15@outlook.com">burhanr15@outlook.com</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+919145583427">+91 9145583427</a></p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Nashik, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <div class="form-header">
+                            <h3>Send me a message</h3>
+                        </div>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn primary-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">BR</div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Burhanuddin Rampurawala. All Rights Reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:burhanr15@outlook.com" class="social-icon" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919145583427" class="social-icon" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/" target="_blank" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://tryhackme.com/" target="_blank" class="social-icon" aria-label="TryHackMe">
+                        <i class="fas fa-flag"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
