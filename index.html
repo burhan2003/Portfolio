@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burhan | Penetration Tester</title>
+  <meta name="description" content="Penetration tester portfolio - Breaking into systems legally and documenting vulnerabilities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Dot Background -->
+  <div class="dot-background"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="navbar-container">
+      <a href="#summary" class="navbar-logo">Burhan</a>
+      <div class="navbar-links">
+        <a href="#summary">Summary</a>
+        <a href="#background">Background</a>
+        <a href="#findings">Findings</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#experience">Experience</a>
+        <a href="#writing">Writing</a>
+        <a href="#education">Education</a>
+        <a href="#engagement">Engagement</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="summary" class="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <p class="hero-label">Penetration Tester</p>
+        <h1 class="hero-title">Hello there, I'm Burhan.</h1>
+        <p class="hero-tagline">Some people collect stamps. I collect vulnerabilities.</p>
+        <p class="hero-description">
+          I'm a penetration tester who breaks into systems (legally) and tells you how I did it before someone else
+          does it maliciously. Think of me as the person who finds the unlocked window before the burglar does.
+        </p>
+        <p class="hero-description">
+          Fresh out of college with a <span class="text-highlight">PNPT certification</span> and
+          <span class="text-highlight">15+ real vulnerabilities</span> found.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#findings" class="btn btn-primary">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+            View Projects
+          </a>
+          <a href="#engagement" class="btn btn-outline">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-footer">
+        <p class="hero-footer-label">Currently seeking</p>
+        <p class="hero-footer-text">Junior Penetration Tester or Red Team roles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background Section -->
+  <section id="background" class="background-section">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-line"></div>
+        <h2 class="section-label">Background</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <h3 class="section-title">How I Got Here (Or: How I Learned to Stop Worrying and Love the Shell)</h3>
+
+      <div class="story-content">
+        <p>
+          Picture this: 2021, first year of college. I'm sitting in my cybersecurity class learning about the CIA
+          triad—Confidentiality, Integrity, Availability. And I'm thinking, "Okay cool, so that's cybersecurity.
+          Just... CIA."
+        </p>
+
+        <p>
+          <span class="text-highlight">2022, same thing.</span> More CIA triad. I'm starting to
+          wonder, "Wait, is that EVERYTHING in cybersecurity?"
+        </p>
+
+        <p>
+          Then I came across TryHackMe and HackTheBox. My brain practically exploded. "WOAHHH, there's an ENTIRE
+          UNIVERSE beyond the CIA triad?!"
+        </p>
+
+        <p>
+          <span class="text-highlight">2023 hits</span>, and I properly dive in. My first room:
+          OSINT. No clue what I'm doing. The room loads, and I get... one picture. Just one. I stare at it. Refresh
+          the page thinking it didn't load properly. Same picture.
+        </p>
+
+        <p>
+          Then I find a Medium article explaining the solution. What happens next?
+          <span class="text-primary">MIND. BLOWN.</span> This person extracted a user's password.
+          From. A. Picture.
+        </p>
+
+        <p>That was it. I was hooked. Didn't stop from that day.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p class="stat-value">Top 6%</p>
+          <p class="stat-label">TryHackMe Global Ranking</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">50+</p>
+          <p class="stat-label">Offensive Security Labs</p>
+        </div>
+        <div class="stat-card">
+          <p class="stat-value">15+</p>
+          <p class="stat-label">Critical Vulns Found</p>
+        </div>
+      </div>
+
+      <div class="philosophy-card">
+        <p class="philosophy-title">My Philosophy</p>
+        <p class="philosophy-text">
+          "I learn systems end-to-end, then build tools that remove friction for everyone else, while I move on to the next 
+          <span class="text-primary">challenge</span>."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="findings" class="projects-section">
+    <div class="section-container-wide">
+      <p class="section-subtitle">Findings</p>
+      <h3 class="section-title-left">Projects</h3>
+
+      <div class="projects-list">
+        <!-- Project 1: ReconForge -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-info">
+              <div class="project-title-row">
+                <h4 class="project-title">ReconForge</h4>
+                <span class="badge badge-secondary">Active Development</span>
+              </div>
+              <p class="project-subtitle">The All-in-One Pentester's Swiss Army Knife</p>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/burhan2003/reconforge" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn-ghost">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <p class="detail-label">Problem</p>
+              <p class="detail-text">Switching between 15 different terminal windows running Nmap, Gobuster, Hydra, and copying outputs into reports like a digital scrapbooker.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Approach</p>
+              <p class="detail-text">Built a unified GUI wrapping every major command-line pentesting tool with automatic report generation.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Impact</p>
+              <p class="detail-text">Documentation is half the job in penetration testing. This tool handles the boring stuff so you can focus on finding vulnerabilities.</p>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="badge badge-outline">Python</span>
+            <span class="badge badge-outline">Flask</span>
+            <span class="badge badge-outline">HTML</span>
+            <span class="badge badge-outline">CSS</span>
+            <span class="badge badge-outline">JavaScript</span>
+          </div>
+        </div>
+
+        <!-- Project 2: DefenseSphere -->
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-info">
+              <div class="project-title-row">
+                <h4 class="project-title">DefenseSphere</h4>
+                <span class="badge badge-secondary">Completed</span>
+              </div>
+              <p class="project-subtitle">Blockchain Meets Identity Management</p>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/burhan2003/defensesphere" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="btn btn-ghost">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+                Demo
+              </a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <p class="detail-label">Problem</p>
+              <p class="detail-text">Traditional IAM systems have single points of failure.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Approach</p>
+              <p class="detail-text">Built a complete blockchain-powered authentication system with RBAC, VPN tunneling, file integrity monitoring, and token-based auth.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Impact</p>
+              <p class="detail-text">Reduced identity spoofing by 68% and unauthorized access incidents by 80% in simulated environments. Also pentested my own system and fixed the vulnerabilities.</p>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="badge badge-outline">Python</span>
+            <span class="badge badge-outline">Flask</span>
+            <span class="badge badge-outline">Solidity</span>
+            <span class="badge badge-outline">Web3.py</span>
+            <span class="badge badge-outline">Burp Suite</span>
+          </div>
+        </div>
+
+        <!-- Project 3: Ghost Keylogger -->
+        <div class="project-card project-card-last">
+          <div class="project-header">
+            <div class="project-info">
+              <div class="project-title-row">
+                <h4 class="project-title">Ghost Keylogger</h4>
+                <span class="badge badge-secondary">Research Project</span>
+              </div>
+              <p class="project-subtitle">Educational Security Research</p>
+            </div>
+            <div class="project-buttons">
+              <a href="https://github.com/burhan2003/ghost-keylogger" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="project-detail">
+              <p class="detail-label">Problem</p>
+              <p class="detail-text">Understanding how malware authors make keyloggers that evade detection.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Approach</p>
+              <p class="detail-text">Built an educational keylogger to study AV evasion techniques, behavioral analysis, and endpoint security.</p>
+            </div>
+            <div class="project-detail">
+              <p class="detail-label">Impact</p>
+              <p class="detail-text">Deepened understanding of attack techniques to better defend against them. Tested exclusively in isolated VMs.</p>
+            </div>
+          </div>
+
+          <div class="project-tech">
+            <span class="badge badge-outline">Python</span>
+            <span class="badge badge-outline">pynput</span>
+            <span class="badge badge-outline">Windows API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="other-projects">
+        <p class="other-projects-title">Other projects:</p>
+        <ul class="other-projects-list">
+          <li>
+            <span class="text-highlight">Active Directory Attack Labs</span> — Practice environment for
+            Kerberoasting, Pass-the-Hash, Golden Ticket attacks
+          </li>
+          <li>
+            <span class="text-highlight">CTF Writeups & Research</span> — 50+ TryHackMe labs completed (Top 9%
+            globally)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Capabilities Section -->
+  <section id="capabilities" class="capabilities-section">
+    <div class="section-container-wide">
+      <p class="section-subtitle">Capabilities</p>
+      <h3 class="section-title-left">Skills</h3>
+
+      <div class="specialties-grid">
+        <div class="specialty-item">
+          <h4 class="specialty-title">Active Directory Attacks</h4>
+          <p class="specialty-description">If your organization runs Windows, there's a 90% chance I can find a way to escalate privileges. Kerberoasting, AS-REP Roasting, Pass-the-Hash, Golden Tickets — that's breakfast.</p>
+        </div>
+        <div class="specialty-item">
+          <h4 class="specialty-title">Learning at Lightning Speed</h4>
+          <p class="specialty-description">Web development? 3 days. n8n automation? 2 days. New exploitation technique? Give me a weekend. I get functional fast enough to build real projects.</p>
+        </div>
+        <div class="specialty-item">
+          <h4 class="specialty-title">Breaking AND Building</h4>
+          <p class="specialty-description">Most pentesters break things. I break things, understand WHY they broke, then build solutions. DefenseSphere is proof.</p>
+        </div>
+        <div class="specialty-item">
+          <h4 class="specialty-title">Making Boring Stuff Interesting</h4>
+          <p class="specialty-description">I write technical writeups that even non-technical people find engaging. What's the point of finding cool vulnerabilities if you can't explain them?</p>
+        </div>
+      </div>
+
+      <h4 class="arsenal-title">Tools & Technologies</h4>
+
+      <div class="arsenal-grid">
+        <div class="arsenal-category">
+          <p class="arsenal-label">Penetration Testing</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">Nmap</span>
+            <span class="badge badge-outline">Metasploit</span>
+            <span class="badge badge-outline">Burp Suite</span>
+            <span class="badge badge-outline">Hydra</span>
+            <span class="badge badge-outline">John The Ripper</span>
+            <span class="badge badge-outline">Nikto</span>
+            <span class="badge badge-outline">Nessus</span>
+            <span class="badge badge-outline">Gobuster</span>
+            <span class="badge badge-outline">SQLmap</span>
+            <span class="badge badge-outline">Dirbuster</span>
+          </div>
+        </div>
+        <div class="arsenal-category">
+          <p class="arsenal-label">Exploitation</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">Linux/Windows Privesc</span>
+            <span class="badge badge-outline">Kerberoasting</span>
+            <span class="badge badge-outline">Pass-the-Hash</span>
+            <span class="badge badge-outline">AS-REP Roasting</span>
+            <span class="badge badge-outline">Golden Tickets</span>
+            <span class="badge badge-outline">Web App Exploitation</span>
+            <span class="badge badge-outline">Lateral Movement</span>
+          </div>
+        </div>
+        <div class="arsenal-category">
+          <p class="arsenal-label">Programming</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">Python</span>
+            <span class="badge badge-outline">Bash</span>
+            <span class="badge badge-outline">PowerShell</span>
+            <span class="badge badge-outline">GoLang</span>
+            <span class="badge badge-outline">JavaScript</span>
+          </div>
+        </div>
+        <div class="arsenal-category">
+          <p class="arsenal-label">Frameworks</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">OWASP Top 10</span>
+            <span class="badge badge-outline">OWASP LLM Top 10</span>
+            <span class="badge badge-outline">NIST CSF</span>
+            <span class="badge badge-outline">MITRE ATT&CK</span>
+          </div>
+        </div>
+        <div class="arsenal-category">
+          <p class="arsenal-label">Networking</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">TCP/UDP</span>
+            <span class="badge badge-outline">SMB/CIFS</span>
+            <span class="badge badge-outline">DNS</span>
+            <span class="badge badge-outline">SSH</span>
+            <span class="badge badge-outline">RDP</span>
+            <span class="badge badge-outline">Wireshark</span>
+          </div>
+        </div>
+        <div class="arsenal-category">
+          <p class="arsenal-label">Operating Systems</p>
+          <div class="arsenal-badges">
+            <span class="badge badge-outline">Kali Linux</span>
+            <span class="badge badge-outline">ParrotOS</span>
+            <span class="badge badge-outline">Windows Server</span>
+            <span class="badge badge-outline">Active Directory</span>
+          </div>
+        </div>
+      </div>
+
+      <h4 class="arsenal-title">Certifications</h4>
+
+      <div class="certifications-grid">
+        <div class="certification-item">
+          <p class="certification-name">PNPT</p>
+          <p class="certification-org">TCM Security</p>
+        </div>
+        <div class="certification-item">
+          <p class="certification-name">CompTIA PenTest+</p>
+          <p class="certification-org">Exam Jan 2026</p>
+        </div>
+        <div class="certification-item">
+          <p class="certification-name">Jr Penetration Tester</p>
+          <p class="certification-org">TryHackMe</p>
+        </div>
+        <div class="certification-item">
+          <p class="certification-name">Generative AI Professional</p>
+          <p class="certification-org">Oracle</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <div class="section-container-wide">
+      <p class="section-subtitle">Experience</p>
+      <h3 class="section-title-left">Work History</h3>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-info">
+            <h4 class="experience-title">AI Agent Assistant</h4>
+            <p class="experience-company">Mindrift Toloka</p>
+          </div>
+          <p class="experience-date">Aug 2025 - Oct 2025</p>
+        </div>
+
+        <ul class="experience-list">
+          <li>
+            <span class="list-dash">—</span>
+            <span>Spearheaded optimization of large language model (LLM) prompts, resulting in a <span class="text-highlight">25% increase</span> in response relevance based on internal evaluation metrics.</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Collaborated with cross-functional teams to implement AI-driven workflow improvements, leading to measurable time and cost savings.</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Implemented AI-driven data analysis methods, influencing product decisions and <span class="text-highlight">saving 10+ hours per month</span> in manual review.</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Managed hands-on machine learning experimentation and AI model training, enhancing understanding of model behavior and optimization for future deployments.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <div class="experience-header">
+          <div class="experience-info">
+            <h4 class="experience-title">Penetration Testing Intern</h4>
+            <p class="experience-company">Groot</p>
+          </div>
+          <p class="experience-date">Jun 2023 - Aug 2023</p>
+        </div>
+
+        <ul class="experience-list">
+          <li>
+            <span class="list-dash">—</span>
+            <span>Found and documented <span class="text-highlight">15+ critical vulnerabilities</span> (CVSS 6+) across sandbox environments</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Wrote comprehensive pentest reports with clear exploit PoCs, CVSS scoring, and remediation strategies</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Executed privilege escalation attacks on hardened Linux VMs using kernel exploits, SUID binaries, and misconfigured services</span>
+          </li>
+          <li>
+            <span class="list-dash">—</span>
+            <span>Simulated post-exploitation scenarios with Metasploit (payload delivery, persistence, lateral movement)</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="experience-footer">
+        <p class="experience-footer-label">Current Activity</p>
+        <p class="experience-footer-text">TryHackMe Top 6%, building ReconForge, writing technical articles, preparing for CompTIA PenTest+.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing Section -->
+  <section id="writing" class="writing-section">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-line"></div>
+        <h2 class="section-label">Writing & Research</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <h3 class="section-title">I Write Too</h3>
+
+      <p class="writing-intro">
+        I document my journey through detailed writeups on Medium. Think of them as technical blog posts where I
+        explain:
+      </p>
+
+      <ul class="writing-list">
+        <li>
+          <span class="text-primary">•</span>
+          <span>How I approached specific penetration testing challenges</span>
+        </li>
+        <li>
+          <span class="text-primary">•</span>
+          <span>Exploitation techniques and methodologies</span>
+        </li>
+        <li>
+          <span class="text-primary">•</span>
+          <span>Lessons learned from CTF competitions</span>
+        </li>
+        <li>
+          <span class="text-primary">•</span>
+          <span>Security research findings</span>
+        </li>
+      </ul>
+
+      <div class="writing-card">
+        <p class="writing-card-title">Why read my articles?</p>
+        <p class="writing-card-text">
+          Because I explain things like I'm talking to a friend over coffee, not like I'm reading from a textbook.
+          Technical doesn't have to mean boring.
+        </p>
+      </div>
+
+      <a href="https://medium.com/@burha2003" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+        Check out my Medium profile
+      </a>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section">
+    <div class="section-container">
+      <div class="section-header">
+        <div class="section-line"></div>
+        <h2 class="section-label">Education</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-card">
+        <div class="education-header">
+          <div class="education-info">
+            <h3 class="education-degree">B.Tech in Computer Science Engineering</h3>
+            <p class="education-specialization">Specialization: Cybersecurity</p>
+          </div>
+          <span class="badge badge-outline-muted">Graduated 2025</span>
+        </div>
+
+        <p class="education-school">Sandip University, Nashik</p>
+
+        <div class="education-cgpa">
+          <p class="cgpa-value">7.9</p>
+          <p class="cgpa-label">CGPA / 10</p>
+        </div>
+
+        <div class="education-footer">
+          <p class="education-quote">
+            The degree gave me the foundation. The late-night lab sessions and CTF competitions gave me the skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="engagement" class="contact-section">
+    <div class="section-container-narrow">
+      <p class="section-subtitle">Engagement</p>
+      <h3 class="section-title-left">Let's Talk</h3>
+
+      <p class="contact-intro">
+        Whether you've got a job opportunity, want to collaborate on a project, or just want to chat about security.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:burhanr15@outlook.com" class="contact-link">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          <span>burhanr15@outlook.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/burhanr/" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          <span>Connect with me</span>
+        </a>
+        <a href="https://github.com/burhan2003" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          <span>Check out my code</span>
+        </a>
+        <a href="https://tryhackme.com/p/2No0b4YoU" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          <span>See my progress</span>
+        </a>
+        <a href="https://medium.com/@burha2003" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg>
+          <span>Read my writeups</span>
+        </a>
+      </div>
+
+      <a href="mailto:burhanr15@outlook.com" class="btn btn-primary btn-lg">
+        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        Get in Touch
+      </a>
+
+      <footer class="site-footer">
+        <p>© 2025 Burhan</p>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
