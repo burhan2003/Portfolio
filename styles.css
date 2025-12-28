@@ -538,6 +538,7 @@ body {
 
 /* Capabilities Section */
 .capabilities-section {
+  background-color: color-mix(in srgb, var(--bwcolor), transparent 40%);
   padding: 8rem 0;
   position: relative;
   z-index: 1;
